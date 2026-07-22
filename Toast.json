@@ -1,0 +1,36 @@
+{
+  "variantOptions": {
+    "类型": ["Phone"]
+  },
+  "pixTreeNodes": [
+    {
+      "name": "Toast",
+      "guid": "5410:23821",
+      "variants": {},
+      "childNode": [
+        {
+          "name": "Toast-Phone",
+          "guid": "5410:23818",
+          "variants": {
+            "类型": "Phone"
+          },
+          "childNode": [
+            {
+              "name": "组合 2",
+              "guid": "2402:9821",
+              "variants": {},
+              "childNode": [
+                {
+                  "name": "Lable",
+                  "guid": "1:12698",
+                  "variants": {},
+                  "childNode": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
