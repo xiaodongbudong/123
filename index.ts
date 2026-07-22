@@ -1,2 +1,2 @@
-export { Toast, toastTypes } from "./Toast";
-export type { ToastProps, ToastType } from "./Toast";
+export { Badge, badgeVariants } from "./Badge"
+export type { BadgeProps, BadgeVariant } from "./Badge"

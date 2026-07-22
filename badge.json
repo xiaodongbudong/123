@@ -1,0 +1,46 @@
+{
+  "variantOptions": {
+    "类型": ["Dot", "Text", "Longest text"]
+  },
+  "pixTreeNodes": [
+    {
+      "name": "Badge",
+      "guid": "5410:23817",
+      "variants": {},
+      "childNode": [
+        {
+          "name": "类型=Dot",
+          "guid": "1:13053",
+          "variants": { "类型": "Dot" },
+          "childNode": []
+        },
+        {
+          "name": "类型=Longest text",
+          "guid": "1:13048",
+          "variants": { "类型": "Longest text" },
+          "childNode": [
+            {
+              "name": "badge text",
+              "guid": "1:13052",
+              "variants": {},
+              "childNode": []
+            }
+          ]
+        },
+        {
+          "name": "类型=Text",
+          "guid": "1:13056",
+          "variants": { "类型": "Text" },
+          "childNode": [
+            {
+              "name": "numeral",
+              "guid": "1:13060",
+              "variants": {},
+              "childNode": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

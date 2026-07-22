@@ -1,0 +1,65 @@
+.harmony-badge {
+  --badge-bg: var(--harmony-warning);
+  --badge-fg: var(--harmony-font-on-primary);
+  --badge-width: auto;
+  --badge-height: 16px;
+  --badge-min-width: 16px;
+  --badge-padding-x: 4px;
+  --badge-padding-y: 1px;
+  --badge-radius: 8px;
+  --badge-font-size: 10px;
+  --badge-font-weight: 400;
+  --badge-line-height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--badge-min-width);
+  height: var(--badge-height);
+  padding: var(--badge-padding-y) var(--badge-padding-x);
+  border-radius: var(--badge-radius);
+  background: var(--badge-bg);
+  font-family: "HarmonyHeiTi", "HarmonyOS Sans", "PingFang SC", sans-serif;
+  font-size: var(--badge-font-size);
+  font-weight: var(--badge-font-weight);
+  line-height: var(--badge-line-height);
+  color: var(--badge-fg);
+  white-space: nowrap;
+  user-select: none;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+/* Dot variant: 6x6 full circle, no text */
+.harmony-badge--Dot {
+  --badge-width: 6px;
+  --badge-height: 6px;
+  --badge-min-width: 6px;
+  --badge-padding-x: 0;
+  --badge-padding-y: 0;
+  --badge-radius: 100px;
+}
+
+.harmony-badge--Dot .harmony-badge__text {
+  display: none;
+}
+
+/* Text variant: 16x16 full circle for single digit; auto-width with 6px padding for 2+ digits */
+.harmony-badge--Text {
+  --badge-height: 16px;
+  --badge-min-width: 16px;
+  --badge-padding-x: 0;
+  --badge-padding-y: 0;
+  --badge-radius: 100px;
+}
+
+.harmony-badge--Text.harmony-badge--multi {
+  --badge-padding-x: 6px;
+}
+
+/* Longest text variant: pill shape, min-width 30px, cornerRadius 8px */
+.harmony-badge--Longest-text {
+  --badge-padding-x: 6px;
+  --badge-padding-y: 1px;
+  --badge-radius: 8px;
+  --badge-min-width: 30px;
+}

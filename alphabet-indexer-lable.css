@@ -1,0 +1,154 @@
+/* AlphabetIndexer-Lable — 1:1 还原自 Pixso node 5317:20448 */
+/*
+ * DSL 量化规格:
+ * - Latin 外层: 88×88, cornerRadius 28, padding 12 (实例渲染为 56×56)
+ * - cn 外层: 66×178, padding 5
+ * - cn 内层面板: 56×168, cornerRadius 36, padding 4, gap 8
+ * - Keyword item: 48×48, cornerRadius 28, padding 8
+ * - Text: 32×32, HarmonyHeiTi Medium 24px, lineHeight 32px
+ * - Latin backdrop blur: 81.55px / 2 ≈ 40.77px
+ * - cn backdrop blur: 30px / 2 = 15px
+ * - Drop shadow: 0px 4px 16px rgba(0,0,0,0.102)
+ * - Fill: COMPONENT_REGULAR (inheritFillStyleID: 616:9110)
+ *   Light: linear-gradient(rgba(255,255,255,0.6)) + rgba(255,255,255,0.102)
+ *   Dark: rgba(0,0,0,0.4)
+ */
+
+.hm-alphabet-indexer-lable {
+  --ai-component-regular-fill: var(
+    --COMPONENT_REGULAR_fill,
+    linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.6) 100%
+      )
+      rgba(255, 255, 255, 0.101961)
+  );
+  --ai-shadow: 0px 4px 16px rgba(0, 0, 0, 0.101961);
+  --ai-latin-backdrop: blur(40.77px);
+  --ai-cn-backdrop: blur(15px);
+  --ai-text-color: var(
+    --harmony-font-primary,
+    rgba(0, 0, 0, 0.898039)
+  );
+  --ai-activated-surface: var(
+    --harmony-comp-background-tertiary,
+    rgba(0, 0, 0, 0.047059)
+  );
+  --ai-activated-text: var(
+    --harmony-font-emphasize,
+    rgba(10, 89, 247, 1)
+  );
+  --ai-font-size: 24px;
+  --ai-line-height: 32px;
+
+  position: relative;
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  color: var(--ai-text-color);
+  font-family: "HarmonyHeiTi", "HarmonyOS Sans SC", "Geist Variable", sans-serif;
+  isolation: isolate;
+}
+
+.hm-alphabet-indexer-lable,
+.hm-alphabet-indexer-lable *,
+.hm-alphabet-indexer-lable *::before,
+.hm-alphabet-indexer-lable *::after {
+  box-sizing: border-box;
+}
+
+/* === 类型尺寸 === */
+.hm-alphabet-indexer-lable--type-latin {
+  width: 56px;
+  height: 56px;
+}
+
+.hm-alphabet-indexer-lable--type-cn {
+  width: 66px;
+  height: 178px;
+  padding: 5px;
+}
+
+/* === Latin chip (圆形玻璃按钮) === */
+.hm-alphabet-indexer-lable__latin-chip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 12px;
+  border-radius: 28px;
+  background: var(--ai-component-regular-fill);
+  box-shadow: var(--ai-shadow);
+  backdrop-filter: var(--ai-latin-backdrop);
+  -webkit-backdrop-filter: var(--ai-latin-backdrop);
+}
+
+/* === cn 面板 (竖条玻璃容器) === */
+.hm-alphabet-indexer-lable__cn-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 56px;
+  height: 168px;
+  padding: 4px;
+  border-radius: 36px;
+  background: var(--ai-component-regular-fill);
+  box-shadow: var(--ai-shadow);
+  backdrop-filter: var(--ai-cn-backdrop);
+  -webkit-backdrop-filter: var(--ai-cn-backdrop);
+}
+
+/* === cn 单项 (关键词按钮) === */
+.hm-alphabet-indexer-lable__cn-item {
+  appearance: none;
+  border: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 28px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+.hm-alphabet-indexer-lable__cn-item--activated {
+  background: var(--ai-activated-surface);
+}
+
+.hm-alphabet-indexer-lable__cn-item:focus-visible {
+  outline: 2px solid var(--ai-activated-text);
+  outline-offset: 2px;
+}
+
+.hm-alphabet-indexer-lable__cn-item--activated
+  .hm-alphabet-indexer-lable__text {
+  color: var(--ai-activated-text);
+}
+
+/* === 文本 === */
+.hm-alphabet-indexer-lable__text {
+  display: block;
+  width: 32px;
+  height: 32px;
+  color: inherit;
+  font-size: var(--ai-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--ai-line-height);
+  letter-spacing: 0;
+  text-align: center;
+  user-select: none;
+}

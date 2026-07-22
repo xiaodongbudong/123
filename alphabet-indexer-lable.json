@@ -1,0 +1,56 @@
+{
+  "variantOptions": {
+    "类型": ["Latin", "cn"],
+    "状态": ["enabled", "activated"]
+  },
+  "pixTreeNodes": [
+    {
+      "name": "AlphabetIndexer-Lable",
+      "guid": "5317:20448",
+      "variants": {},
+      "childNode": [
+        {
+          "name": "类型=Latin",
+          "guid": "5317:20446",
+          "variants": { "类型": "Latin" },
+          "childNode": [
+            {
+              "name": "状态=enabled",
+              "guid": "27:34465",
+              "variants": { "状态": "enabled" },
+              "childNode": [{ "name": "Text", "guid": "27:34462", "variants": {}, "childNode": [] }]
+            },
+            {
+              "name": "状态=activated",
+              "guid": "27:34464",
+              "variants": { "状态": "activated" },
+              "childNode": [{ "name": "Text", "guid": "27:34460", "variants": {}, "childNode": [] }]
+            }
+          ]
+        },
+        {
+          "name": "类型=cn",
+          "guid": "5317:20438",
+          "variants": { "类型": "cn" },
+          "childNode": [
+            {
+              "name": "画板 1",
+              "guid": "27:34481",
+              "variants": {},
+              "childNode": [
+                { "name": "Keyword (activated)", "guid": "27:34475", "variants": { "状态": "activated" }, "childNode": [] },
+                { "name": "Keyword (enabled)", "guid": "27:34471", "variants": { "状态": "enabled" }, "childNode": [] },
+                { "name": "Keyword (enabled)", "guid": "27:34479", "variants": { "状态": "enabled" }, "childNode": [] }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "pixsoUrl": "https://pixso.cn/app/design/HA_e8I2mE7Oa0b5ZoeokSA?item-id=5317:20448",
+    "mcpTools": ["get_node_dsl", "get_screenshot", "design_to_code", "get_all_components"],
+    "generatedAt": "2026-06-15"
+  }
+}
