@@ -1,0 +1,84 @@
+/*
+ * HarmonyHeiTi → 可渲染 fallback 映射
+ * Pixso 设计稿使用 HarmonyHeiTi，仓库无原字体文件。
+ * 优先级：系统 PingFang/Hiragino → 打包 Noto Sans SC（无本地字体时由 font-family 栈回落）
+ */
+@import "@fontsource/noto-sans-sc/chinese-simplified-400.css";
+@import "@fontsource/noto-sans-sc/chinese-simplified-500.css";
+
+@font-face {
+  font-family: "HarmonyHeiTi";
+  src:
+    local("PingFang SC"),
+    local("Hiragino Sans GB"),
+    local("STHeiti"),
+    local("Heiti SC");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyHeiTi";
+  src:
+    local("PingFang SC Medium"),
+    local("PingFang SC"),
+    local("STHeiti Medium"),
+    local("Heiti SC Medium");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyHeiTi";
+  src:
+    local("PingFang SC Semibold"),
+    local("PingFang SC Medium"),
+    local("STHeiti Medium");
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyHeiTi-Regular";
+  src:
+    local("PingFang SC"),
+    local("Hiragino Sans GB"),
+    local("STHeiti");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyHeiTi-Medium";
+  src:
+    local("PingFang SC Medium"),
+    local("STHeiti Medium");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans";
+  src:
+    local("PingFang SC Medium"),
+    local("Hiragino Sans GB"),
+    local("STHeiti Medium");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans-Medium";
+  src:
+    local("PingFang SC Medium"),
+    local("STHeiti Medium");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
