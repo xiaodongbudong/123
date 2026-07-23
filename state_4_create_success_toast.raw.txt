@@ -1,0 +1,8 @@
+```json
+{
+  "id": "success_toast",
+  "reactCode": "import React from 'react';\nimport { Toast } from '@/components/Toast';\n\nexport default function GeneratedComponent() {\n  return (\n    <div \n      data-component-id=\"success_toast\" \n      style={{ \n        position: 'absolute', \n        left: 16, \n        top: 48, \n        width: 328, \n        height: 36, \n        zIndex: 70,\n        display: 'flex',\n        justifyContent: 'center',\n        alignItems: 'center'\n      }}\n    >\n      <Toast 内容=\"开局配置成功\" />\n    </div>\n  );\n}",
+  "css": "",
+  "notes": "Used Toast component from @/components/Toast. Applied bbox as absolute positioning and zIndex from props."
+}
+```
