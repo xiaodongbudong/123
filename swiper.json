@@ -1,0 +1,38 @@
+{
+  "variantOptions": {
+    "变体": [
+      "banner-2in1",
+      "number-phone",
+      "progress-banner-phone"
+    ],
+    "尺寸": [
+      "28",
+      "32",
+      "40"
+    ],
+    "状态": [
+      "Activated",
+      "Enable"
+    ]
+  },
+  "pixTreeNodes": [
+    {
+      "name": "Swiper-Banner-2in1",
+      "guid": "9:35938",
+      "variants": {},
+      "childNode": []
+    },
+    {
+      "name": "Swiper-Number-Phone",
+      "guid": "5316:19999",
+      "variants": {},
+      "childNode": []
+    },
+    {
+      "name": "Swiper-Progress bnner-Phone",
+      "guid": "1:8717",
+      "variants": {},
+      "childNode": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+.hm-swiper-progress-banner-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 32px;
+  padding: 15px 16px;
+  gap: 4px;
+}
+
+.hm-swiper-progress-banner-phone,
+.hm-swiper-progress-banner-phone * {
+  box-sizing: border-box;
+}
+
+/* ---- progress segment ---- */
+
+.hm-swiper-progress-banner-phone__segment {
+  flex: 0 0 auto;
+  width: 62.4px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--harmony-icon-fourth);
+}
+
+.hm-swiper-progress-banner-phone__segment--active {
+  background-color: var(--harmony-background-primary);
+}
